@@ -16,25 +16,26 @@ video {
   background-size: cover;
   transition: 1s opacity; }
 
-header {
-  height: 700px;
-               /*
-background-image: url(../imagenes/prueba2.gif);
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: center; */ }
+/* header{
+    height: inherit;
+} */
+#menu {
+  float: right; }
 
-nav {
-  position: absolute !important;
-  right: 0;
-  background-color: transparent !important;
-  border: none !important; }
-
-.hamburger {
-  color: #fff !important; }
+.opciones-menu {
+  display: none;
+  list-style: none;
+  padding: 2%; }
+  .opciones-menu li {
+    padding: 2%;
+    display: inline;
+    text-decoration: none; }
+    .opciones-menu li a {
+      color: #fff !important;
+      text-decoration: none !important;
+      letter-spacing: 2px; }
 
 #video-fondo {
-  height: auto;
   position: fixed;
   width: 100%;
   z-index: -100;

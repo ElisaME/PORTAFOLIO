@@ -5,73 +5,58 @@
 	<title>Elisa Martinez</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/hamburgers.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<!-- Menú -->
  	<header>
-	 	<!-- <button class="hamburger hamburger--collapse" type="button">
-	 			  <span class="hamburger-box">
-	 			    <span class="hamburger-inner"></span>
-	 			  </span>
-	 			</button> -->
- 		<nav class="navbar navbar-inverse">
- 					<div class="container">
- 						<div class="navbar-header">
- 							<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
- 								<span class="icon-bar"></span>
- 								<span class="icon-bar"></span>
- 								<span class="icon-bar"></span>
- 							</button>
- 							
- 						</div>
- 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
- 							<ul class="nav navbar-nav navbar-right">
- 								<li class="active">
- 		                            <a href="#nosotros">NOSOTROS</a>
- 		                        </li>
- 		                        <li>
- 		                            <a href="#">SERVICIOS</a>
- 		                        </li>
- 		                        <li>
- 		                            <a href="#">PROYECTOS</a>
- 		                        </li>
- 		                        <li>
- 		                            <a href="#">EQUIPO</a>
- 		                        </li>
- 		                        <li>
- 		                            <a href="co#">BLOG</a>
- 		                        </li>
- 		                        <li>
- 		                            <a href="co#">CONTACTO</a>
- 		                        </li>
- 							</ul>
- 						</div>
- 					</div>
- 				</nav>
+	 	<div id="menu" class="hamburger hamburger--collapse" type="button"
+        aria-label="Menu" aria-controls="navigation">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</div>
+		<!-- Menu de navegacion -->
+		<nav id="navigation">
+			<ul class="opciones-menu text-right">
+				<li><a href="#inicio">01 INICIO</a></li>
+				<li><a href="#proceso">02 PROCESO</a></li>
+				<li><a href="#proyectos">03 PROYECTOS</a></li>
+				<li><a href="#skills">04 SKILLS</a></li>
+				<li><a href="#contacto">05 CONTACTO</a></li>
+			</ul>
+		</nav>
+		
  	</header>
-	<!-- Video de AdobeStock-->
-	<video id="video-fondo"autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
-		<source src="imagenes/AdobeStock_99343587_Video_HD_WM.mov" type="video/mp4" />
-	</video/>
-	<!-- TEXTO EN VIDEO -->
-	<div id="hola" class="text-center">
-		<h1>HOLA! SOY ELISA</h1>
-	</div>
-	<!-- Separador -->
-	<section>
+ 	<!-- Video -->
+ 	<section>
+ 		<!-- Video de AdobeStock-->
+		<video id="video-fondo" autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+			<source src="imagenes/AdobeStock_99343587_Video_HD_WM.mov" type="video/mp4" />
+		</video>
+		<!-- TEXTO EN VIDEO -->
+		<div id="hola" class="text-center">
+			<h1>HOLA! SOY ELISA</h1>
+		</div>
+ 	</section>
+	
+	<!--  Separador -->
+	<!-- <section>
 		<div class="container-fluid">
 			<div class="col-md-6 escalon">
 				<div class="triangulo"></div>
 			</div>
 		</div>
-	</section>
+	</section> -->
+
 	<!-- Mi proceso -->
-	<section id="proceso">
-		
+	<!-- <section id="proceso">
 	</section>
+	  -->
 	<!-- Scripts para bootstrap-->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/jquery-min.js"></script>
     <script src="js/bootstrap.min.js"></script></body>
 </html>

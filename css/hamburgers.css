@@ -37,7 +37,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: #fff; 
     border-radius: 4px;
     position: absolute;
     transition-property: -webkit-transform;
@@ -52,7 +52,6 @@
     top: -10px; }
   .hamburger-inner::after {
     bottom: -10px; }
-
 /*
  * 3DX
  */
