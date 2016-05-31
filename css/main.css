@@ -1,28 +1,75 @@
 /*Variables*/
+/* Mixin Separador */
+/* MIXIN PROYECTO */
 * {
   font-family: 'Lato', sans-serif !important; }
 
-/*Video AdobeStock*/
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity; }
+.p-0 {
+  padding: 0 !important; }
 
-/* header{
-    height: inherit;
-} */
+/*VIDEO*/
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative; }
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none; }
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important; }
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  z-index: -1000; }
+
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%; }
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0; }
+
+.video-container video.fillWidth {
+  width: 100%; }
+
+/*MENU*/
+#hola {
+  padding: 1%;
+  width: 54%;
+  position: absolute;
+  top: 65%;
+  color: #fff;
+  left: 67%;
+  margin: -10% 0 0 -45%;
+  text-align: center;
+  border: 3px solid #fff;
+  vertical-align: middle; }
+  #hola h1 {
+    color: #fff;
+    letter-spacing: 2rem;
+    font-size: 3em; }
+
 #menu {
-  float: right; }
+  position: absolute;
+  right: 0; }
 
 .opciones-menu {
+  width: 100%;
+  position: absolute;
+  right: 5%;
   display: none;
   list-style: none;
   padding: 2%; }
@@ -35,52 +82,207 @@ video {
       text-decoration: none !important;
       letter-spacing: 2px; }
 
-#video-fondo {
-  position: fixed;
-  width: 100%;
-  z-index: -100;
-  -webkit-filter: brightness(0.7) grayscale(0.9); }
-
-#hola {
-  padding: 1%;
-  width: 54%;
-  position: absolute;
-  top: 65%;
-  color: #fff;
-  left: 67%;
-  margin: -10% 0 0 -45%;
-  text-align: center;
-  border: 3px solid #fff;
-  vertical-align: middle; }
-
-h1 {
-  color: #fff;
-  letter-spacing: 2rem;
-  font-size: 3em; }
-
-/*Escalon*/
-.escalon {
-  background-color: #7A7087;
+/*Separador*/
+.separador1 {
   height: 50px;
-  margin-top: -50px; }
+  background-color: #083643; }
+  .separador1 .escalon {
+    background-color: #083643;
+    height: 50px;
+    margin-top: -50px; }
+  .separador1 .triangulo {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 65px solid #B1E001;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
-.triangulo {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-left: 65px solid #97CDCB;
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
+/* PROCESO */
 #proceso {
-  height: 200px;
-  background-color: #7A7087; }
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #083643; }
+  #proceso .circulo {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    margin: 0 auto; }
+    #proceso .circulo .proceso-item {
+      color: #fff; }
+
+/* PROYECTOS */
+.p0 {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* Proyecto 1 */
+.proyecto1 .imagenFondo {
+  background-image: url("../imagenes/Gema.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto1 .descripcion {
+  background-color: rgba(177, 224, 1, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto1 .descripcion .verMas {
+    display: none; }
+.proyecto1 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto1 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Proyecto 2 */
+.proyecto2 .imagenFondo {
+  background-image: url("../imagenes/ecomunidad.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto2 .descripcion {
+  background-color: rgba(71, 108, 94, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto2 .descripcion .verMas {
+    display: none; }
+.proyecto2 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto2 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Proyecto 3 */
+.proyecto3 .imagenFondo {
+  background-image: url("../imagenes/flatTheme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto3 .descripcion {
+  background-color: rgba(183, 236, 215, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto3 .descripcion .verMas {
+    display: none; }
+.proyecto3 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto3 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Proyecto 4 */
+.proyecto4 .imagenFondo {
+  background-image: url("../imagenes/flatTheme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto4 .descripcion {
+  background-color: rgba(183, 236, 215, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto4 .descripcion .verMas {
+    display: none; }
+.proyecto4 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto4 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Proyecto 5 */
+.proyecto5 .imagenFondo {
+  background-image: url("../imagenes/flatTheme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto5 .descripcion {
+  background-color: rgba(177, 224, 1, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto5 .descripcion .verMas {
+    display: none; }
+.proyecto5 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto5 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Proyecto 6 */
+.proyecto6 .imagenFondo {
+  background-image: url("../imagenes/flatTheme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 210px; }
+.proyecto6 .descripcion {
+  background-color: rgba(71, 108, 94, 0.8);
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #083643;
+  padding-top: 15%; }
+  .proyecto6 .descripcion .verMas {
+    display: none; }
+.proyecto6 .imagenFondo:hover .descripcion {
+  background-color: rgba(206, 240, 157, 0.8); }
+  .proyecto6 .imagenFondo:hover .descripcion .verMas {
+    display: inline-block;
+    background-color: #083643;
+    color: #fff;
+    padding: 2%; }
+
+/* Separador 2 */
+.separador2 {
+  height: 50px;
+  background-color: #083643; }
+  .separador2 .escalon {
+    background-color: #083643;
+    height: 50px;
+    margin-top: -50px; }
+  .separador2 .triangulo {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 65px solid #B1E001;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 /*# sourceMappingURL=main.css.map */
